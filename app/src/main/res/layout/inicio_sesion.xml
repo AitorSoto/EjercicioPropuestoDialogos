@@ -56,18 +56,40 @@
             android:ems="10"
             android:hint="@string/contraseña"/>
     </com.google.android.material.textfield.TextInputLayout>
-    <CheckBox
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/contenedorCheckBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/checkbox"
         android:layout_below="@id/til_contraseña"
-        android:accessibilityPaneTitle="@string/recordar"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textoRecordarContraseña"
+            android:text="@string/recordar"
+            android:textSize="18dp"/>
+    </LinearLayout>
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textoOlvidoContraseña"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textoRecordarContraseña"
-        android:layout_below="@id/til_contraseña"
-        android:layout_toRightOf="@id/checkbox"
-        android:layout_marginLeft="5dp"/>
-
+        android:text="@string/contraseñaOlvidada"
+        android:textSize="18dp"
+        android:gravity="right"
+        android:layout_below="@id/contenedorCheckBox"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/botonEntrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="@string/iniciar"
+        android:layout_below="@id/textoOlvidoContraseña"/>
 </RelativeLayout>
