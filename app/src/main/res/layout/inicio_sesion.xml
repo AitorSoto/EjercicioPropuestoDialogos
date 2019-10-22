@@ -5,17 +5,69 @@
     android:layout_height="match_parent"
     android:id="@+id/contenedorPrincipal"
     android:padding="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textoCuenta"
+        android:text="@string/requisitosCuenta"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/botonCrear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="@string/crear"
+        android:layout_below="@id/textoCuenta"
+        android:layout_marginBottom="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/vista"
+        android:layout_below="@id/botonCrear"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="20dp"/>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_nombre"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/botonCrear">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tiet_contacto"
+            android:id="@+id/tiet_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/nombre"/>
     </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_nombre"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/contraseña"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox"
+        android:layout_below="@id/til_contraseña"
+        android:accessibilityPaneTitle="@string/recordar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textoRecordarContraseña"
+        android:layout_below="@id/til_contraseña"
+        android:layout_toRightOf="@id/checkbox"
+        android:layout_marginLeft="5dp"/>
 
 </RelativeLayout>

@@ -25,18 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 LayoutInflater inflater = MainActivity.this.getLayoutInflater();
 
-                builder.setView(inflater.inflate(R.layout.inicio_sesion, null))
-                        .setPositiveButton("Crear cuenta", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int i) {
-                                dialog.cancel();
-                            }
-                        }).setNegativeButton("Entrar", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int i) {
-                                dialog.cancel();
-                            }
-                        });
+                builder.setView(inflater.inflate(R.layout.inicio_sesion, null));
                 builder.show();
             }
         });

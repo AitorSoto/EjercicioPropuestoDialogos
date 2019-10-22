@@ -4,4 +4,7 @@
     <string name="contraseña">Contraseña</string>
     <string name="recordar">Recuerdame</string>
     <string name="contraseñaOlvidada">¿Olvidaste tu contraseña?</string>
+    <string name="crear">Crear cuenta</string>
+    <string name="iniciar">Iniciar sesion</string>
+    <string name="requisitosCuenta">Necesitas tener creada una cuenta para iniciar la aplicacion</string>
 </resources>
