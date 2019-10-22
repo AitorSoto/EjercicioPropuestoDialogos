@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejercicio Propuesto Dialogos</string>
+    <string name="nombre">Nombre</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="recordar">Recuerdame</string>
+    <string name="contraseñaOlvidada">¿Olvidaste tu contraseña?</string>
+</resources>
