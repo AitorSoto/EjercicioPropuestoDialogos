@@ -18,7 +18,6 @@ import com.google.android.material.textfield.TextInputEditText;
 public class Dialogo {
     public Dialogo(final Context context){
         final Dialog dialogo = new Dialog(context);
-        dialogo.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialogo.setCancelable(false);
         dialogo.setContentView(R.layout.inicio_sesion);
         dialogo.show();

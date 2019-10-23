@@ -34,8 +34,5 @@ public class MainActivity extends AppCompatActivity {
                 new Dialogo(context);
             }
         });
-
-
-
     }
 }
