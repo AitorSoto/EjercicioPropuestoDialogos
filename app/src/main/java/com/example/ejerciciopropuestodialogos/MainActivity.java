@@ -17,7 +17,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class MainActivity extends AppCompatActivity {
 
     private Button boton;
-    private Context context = this;
+    Context context;
 
 
     @Override
@@ -25,13 +25,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        context = this;
 
         boton = findViewById(R.id.boton);
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Dialogo d = new Dialogo(context);
+                new Dialogo(context);
             }
         });
 
