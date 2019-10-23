@@ -43,6 +43,22 @@ public class Dialogo {
                 }
             }
         });
+
+        iniciarSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (textoNombre.getText().toString().equals("")
+                        || textoContraseña.getText().toString().equals("")) {
+                    Snackbar s = Snackbar.make(dialogo.findViewById(R.id.contenedorPrincipal), "El nombre o la contraseña están vacias...",
+                            Snackbar.LENGTH_LONG);
+                    s.show();
+                }
+                else{
+                    dialogo.dismiss();
+                    Toast.makeText(context, "Bienvenido "+textoNombre.getText().toString(), Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 
     public void muestraError(){
